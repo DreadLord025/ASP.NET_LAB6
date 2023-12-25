@@ -1,0 +1,11 @@
+﻿@model List<Product>
+
+<h2 style="color: #007bff;">Заказанные товары</h2>
+
+@for (var i = 0; i < Model.Count; i++)
+{
+    <div class="form-group" style="margin-bottom: 1rem; border: 1px solid #dee2e6; padding: 1rem; border-radius: 0.25rem;">
+        <h3 style="color: #343a40;">@Model[i].Name</h3>
+        <h5 style="color: #6c757d;">Количество заказов: @Model[i].Quantity</h5>
+    </div>
+}

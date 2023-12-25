@@ -1,0 +1,17 @@
+﻿@model User
+
+<h2 style="color: #007bff;">Регистрация</h2>
+
+<form asp-controller="Order" asp-action="Register" method="post">
+    <div class="form-group">
+        <label asp-for="Name" style="font-weight: bold;">Имя:</label>
+        <input asp-for="Name" class="form-control" style="border-radius: 0.25rem;" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Age" style="font-weight: bold;">Возраст:</label>
+        <input asp-for="Age" id="age" type="number" min="1" step="1" class="form-control" style="border-radius: 0.25rem;" />
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary" style="border-radius: 0.25rem; margin-top: 1rem;">Подтвердить</button>
+    </div>
+</form>
